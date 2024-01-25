@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="./estilos/style.css"><!--esse tag e necessaria para linkar o css com o html-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+        </style>
+</head>
+<body >
+        <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <a href="index.html" class="cabecalho__menu__link">Home</a>
+                <a href="sobremin.html" class="cabecalho__menu__link">Sobre mim</a>
+            </nav><!--tag usada para gerar os links que vc vai usar para navegar na pagina-->
+        </header>
+        <main class="apresentacao">
+            <section class="apresentacao__conteudo">
+            <!--a classe para ser utilizada no css basta começar com .(nome da classe)-->
+            <!--para retirar a margem e o padding do html tem que ir no css e usar o * e depois {}-->
+            <!--para usar 100% da tela do navegador basta ir no css na tag body e usar height = 100vh-->
+            <!--css box sizing e necessario para que o conteudo não seja maior que a tag body e com isso não sobresaia a pag html-->
+                <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível<strong class="titulodestaque"> com um Front-end de qualidade!</strong></h1>
+                <p class="apresentacao__conteudo__texto">Olá! Sou Joana Santos, desenvolvedora Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+                <!--tag para agrupar/divisão determinados elementos-->
+                <div class="apresentacao__links">
+                    <h2 class="apresentacao__links__subtitulo">Acesse as minhas redes!!!</h2>
+                <a href="https://www.instagram.com" class="apresentacao__links__botão"><img src="./Assets-aula2-curso3-html-e-css-main/assets/instagram.png" alt=""> Instagram</a>
+                <a href="https://github.com" class="apresentacao__links__botão"><img src="./Assets-aula2-curso3-html-e-css-main/assets/github.png" alt=""> Github</a>
+                <a href="https://www.twitch.tv/duartinh10" class="apresentacao__links__botão"><img src="./Assets-aula2-curso3-html-e-css-main/assets/twitch.png" alt=""> Twitch</a>
+                </div>
+            </section><!--tag section serve para selecionar um conteudo-->
+            <img src="./Imagem.png" alt="mulher digitando" class="apresentacao__imagem">
+            </main>>
+        <footer class="rodape"><!--serve para fazer o rodape da pag-->
+            <p>Desenvoldido por Matheus Duarte Martins</p>
+        </footer>
+        
+</body>
+</html>

@@ -1,0 +1,145 @@
+:root{/* criando variavel no css que vou atribuir um valor de cor e com isso iria aplicar em todo o css*/
+    --cor-primaria:#000000;
+    --cor-segundaria:#F6F6F6;/*primeiro vem o nome da variavel (--cor-principal) e depois vem a cor*/
+    --cor-terciaria:#22D4FD;
+    --cor-houver: #272727;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-segundaria);
+}
+h1{
+    color: var(--cor-segundaria);
+}
+h2{
+    color:var(--cor-segundaria);
+}
+
+.titulodestaque
+{
+    color:var(--cor-terciaria);
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link
+{
+    font-size: 24px;
+    font-weight: 600px;
+    font-family:'Montserrat', sans-serif;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.apresentacao
+{
+    padding: 5% 15%;
+    /*margin: auto; serve para criar uma margem entre os itens do html*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.apresentacao__conteudo__titulo
+{
+    font-size: 2.25rem;/*para chegar no valor do rem basta dividir o numero de pixel(px) por 16 e necessario utilizar
+                     o rem para que a pag redimensione de forma automatica o texto pra muito grande ou muito pequeno*/
+    font-family:'Krona One', sans-serif;
+}
+.apresentacao__conteudo__texto
+{
+    font-size: 1.5rem;
+    font-family:'Montserrat', sans-serif;
+    color: var(--cor-segundaria);
+
+}
+.apresentacao__links
+{
+    display: flex;/*necessario para utilizar o box flex*/
+    flex-direction: column;/*seleciona a forma do flex*/
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;/*utilizado para gerar um espaçamento no flex*/
+}
+.apresentacao__links__subtitulo
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Krona One', sans-serif;
+}
+.apresentacao__links__botão/*estou usando css em classe eu criei essa classe no html e depois importo ela pro css*/
+{                                
+    display: flex;
+    justify-content: center;/*seleciona a forma de alinhamento do flex*/
+    gap: 16px;
+    background-color:var(--cor-primaria);/*essa função e para mudar a cor de fundo*/
+    width: 50%;/*essa e para definir o tamanho*/
+    text-align: center;/*essa e para alinhar o texto que ta sendo usado*/
+    border-radius: 8px;/*para definir o raio da borda(defini se a borda vai ser redonda ou quadrada)*/
+    font-size: 1.5rem;/*o tamanho da fonte*/
+    padding: 21.5px 0px;/*defini o preenchimento a primeira informação e horizontal e a segunda e vertical*/
+    text-decoration: none;/*e para vc resetar o texto deixar ele sem nenhum formatação padrão*/
+    color: var(--cor-segundaria);
+    border: var(--cor-terciaria) 2px solid;/*criando a borda vc precisa dizer a cor que vai ser o tamanho dele(2px) e a forma do trasejado(solid)*/
+    font-weight: 600;/*a força/tipo da fonte*/
+    font-family:'Montserrat', sans-serif;/*aplicação de uma fonte especifica*/
+}
+.apresentacao__links__botão:hover/*o uso do hover e para estilizar quando o mouse passar por cima*/
+{
+    background-color:var(--cor-houver);/*nesse caso esta se alterando o fundo dos botões quando o mouse esta encima*/
+}
+.apresentacao__imagem
+{
+    width: 50%;/*para os comenponetnes de texto e imagem se adequar ao tamanho da tela de forma automatica tem que se usar a medida em %*/
+}
+.rodape
+{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    padding: 24px;
+    font-size: 1.5rem;
+    font-weight: 400px;
+    font-family:'Montserrat', sans-serif;
+}
+
+@media (max-width: 1200px)
+{/*o media funciona como se fosse um if sendo que nesse caso se o tamanho da pagina for de 1200px ele vai ser acionado e 
+    as modificações presentes nele seram aplicadas*/
+    .cabecalho{
+        padding: 10%;
+        
+        /*text-align: center;*/
+    }
+    .cabecalho__menu{
+        justify-content: center;
+        
+    }
+    .apresentacao{
+        display: flex;
+        flex-direction:column-reverse;/*posiciona as paginas em forma de coluna e nesse caso em reverso*/
+        padding: 5%;
+    }
+    .apresentacao__conteudo
+    {
+        width: auto;
+    }
+
+}
